@@ -9,7 +9,7 @@ Our goal is to help find your new favorite beer...or two! Using big data, we aim
 * Brittany Hethcock
 * Eric Piper
 * Marlene Vasquez
-* Soujanya 
+* Soujanya Sridharan
 * Steven Salguero
 
 
