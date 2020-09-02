@@ -1,0 +1,194 @@
+
+h2 {
+    padding-top: 20px;
+}
+
+h1 { 
+    padding-top: 40px;
+    /* margin-left: 60px; */
+    margin-left: 25%;
+    padding-bottom: 15px;
+    color:#6072a5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-indent: 45px;
+    font-size: 70px;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 0px;
+    color: #0c3096;
+    padding-bottom: 10px;
+    text-indent: 60;
+    margin-left: 15%;
+    scroll-padding-left: 50px;
+    font-size: 20px;
+} 
+
+#chart_pg {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 0px;
+    color: #0c3096;
+    padding-bottom: 10px;
+    text-indent: 60;
+    margin-left: 35%;
+    scroll-padding-left: 50px;
+    font-size: 20px;
+}
+
+h4{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 0px;
+    color: #ffffff;
+    padding-bottom: 10px;
+    scroll-padding-left: 50px;
+    font-size: 25px;
+    /* font-weight: bold; */
+}
+
+h5{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 0px;
+    color: #050505;
+    padding-bottom: 10px;
+    scroll-padding-left: 50px;
+    font-size: 18px;
+}
+
+#main_pg {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 0px;
+    color: #ffffff;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+label {
+    color: #313131;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#landing_title { 
+    padding-top: 40px;
+    /* margin-left: 60px; */
+    margin-right: 23%;
+    padding-bottom: 15px;
+    color:#ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* text-indent: 1px; */
+    font-size: 70px;
+}
+
+#scatter_title { 
+    padding-top: 40px;
+    /* margin-left: 60px; */
+    margin-left: 15%;
+    padding-bottom: 15px;
+    color:#6072a5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-indent: 45px;
+    font-size: 70px;
+}
+
+#scatter_pg {    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 0px;
+    color: #0c3096;
+    padding-bottom: 10px;
+    text-indent: 60;
+    margin-left: 32%;
+    scroll-padding-left: 50px;
+    font-size: 20px;
+}
+
+b {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* Height setting for the map*/
+#map { 
+    height: 900px;
+ }
+
+ #viz1598730642095 {
+     margin-left: 20%;
+ }
+
+.button {
+    background-color: #e7e7e7; /* Gray */
+    border: none;
+    color: black;
+    padding: 12px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+.dropdown-menu {
+background-color: #dee7f1;
+border-color: rgb(159, 190, 248);
+}
+
+#navbarSupportedContent{
+    background-color: rgb(194, 206, 229);
+    box-shadow: 0 5px #c5d5e7;
+}
+
+.nav-item a {
+    color: rgb(100, 99, 99);
+}
+
+.navbar-brand {
+    background-color: rgb(192, 205, 229);
+    margin-left: 10px;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    text-align: center!important;
+    border-radius: 2px;
+    box-shadow: 0 5px #c5d5e7;
+}
+
+#navbarSupportedContent{
+    background-color: rgb(186, 198, 221);
+    border-radius: 2px;
+}
+
+.rounded {
+    width: 50%!important;
+    height: 50%!important;
+    margin-right: 20px;
+}
+   
+
+@media screen and (max-width: 600px) {
+    .box {
+    background-color: #f0f4fa;
+    }
+
+    .navbar-brand {
+
+    background-color: rgb(159, 171, 194);
+    box-shadow: 0 5px rgb(159, 171, 194);
+    padding-top: 15px;
+    
+    }
+    #navbarSupportedContent{
+    background-color: rgb(227, 236, 252);
+    border-radius: 2px;
+    }
+    
+    .navbar-expand-lg {
+    background-color: rgb(131, 171, 245) !important;
+    }
+}
+
+.footer {
+    background-color: rgb(208, 213, 221);
+    border-top: rgb(169, 174, 182);
+    border-top-style: solid;
+    border-top-width: 5px;
+    padding-bottom: 0px;
+    padding-top: 10px;
+    color: rgb(134, 103, 103);
+}
