@@ -1,0 +1,110 @@
+!DOCTYPE html>
+<html lang="en">
+​
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project3</title>
+    ​
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
+        integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+        crossorigin="" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../static/css/mapStyle.css"> -->
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.js"></script>
+    <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.0.4/chroma.min.js"></script>
+</head>
+
+<body>
+    <!-- set up nav bar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
+        <br>
+        <a class="navbar-brand text-white" href="/">Beer Analysis </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        ​
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <b> Beer Data </b>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="beerdata">Beer Charts</a>
+                        <a class="dropdown-item" href="map">Beer Map</a>
+                        <a class="dropdown-item" href="scatter">3D Scatter</a>
+                        <div class="dropdown-divider"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- container for main page header-->
+    <div class="container">
+        <div class="jumbotron text-center" style= "background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQvifAbdQARNEvT8hNO2IywqnOawqi4ketbIg&usqp=CAU)";
+        style= "width: 150%";>
+        <div class="row" style="color: aliceblue;" >
+            <div class="col-lg- col-sm-12>
+                <div class="box">
+              <br>
+                  <h1 class="title" id="landing_title">Beer Deep Dive</h1>
+                  <!-- <p><h4><b>Let's find your new favorite beer!</b></h4></p>  -->
+                  <p><h4>We use Machine Learning and Big Data to help analyze your favorite beer and make suggestions for other liquid grains you may enjoy!</h4></p> 
+                  <hr>
+              </div>
+            </div>
+        </div>
+        <div class="row">
+              <form id="form">
+                <div class="form-group">
+                    <p><h5><b>Let's find your new favorite beer!</b></h5></p> 
+                    <!-- <hr/> -->
+                    <!-- <label for="patient-form">Enter a beer you like </label> -->
+                    <label for="patient-form"></label>
+                    <input class="form-control" id="beer-form-input" name="beer-form" type="text"
+                        placeholder="Enter a beer you like">
+                </div>
+                <button id="button" type="button" class="btn btn-default">Enter</button>
+            </form>
+
+        </div>
+
+        <div class="row">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Beer Name</th>
+                    <th scope="col">Beer Style</th>
+                    <th scope="col">Brewery Name</th>
+                    <th scope="col">Beer ABV</th>
+                    <th scope="col">Beer Overall Review</th>
+                    <th scope="col">Beer Taste Review</th>
+                    <!-- <th scope="col">Beer cluster</th> -->
+
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+            <script src="static/js/loadbeer.js"></script>
+        
+    <!-- <div class="footer text-center" style="margin-bottom:0">
+        <p>&copy; Copyright B.Hethcock, E.Piper, M.Vasquez, S.Sridharan, S.Salguero 2020</p>
+        </div>   -->
+
+</body>
+
+</html>
